@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vishal.storagesample.MainActivity">
+
+
+    <Button
+        android:id="@+id/shared_preferences_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Shared Preferences"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="63dp"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/internal_storage_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Internal Storage"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/shared_preferences_btn"
+        android:layout_alignLeft="@+id/shared_preferences_btn"
+        android:layout_alignStart="@+id/shared_preferences_btn"
+        android:layout_alignRight="@+id/shared_preferences_btn"
+        android:layout_alignEnd="@+id/shared_preferences_btn"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/external_storage_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="External Storage"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/internal_storage_btn"
+        android:layout_alignLeft="@+id/internal_storage_btn"
+        android:layout_alignStart="@+id/internal_storage_btn"
+        android:layout_alignRight="@+id/internal_storage_btn"
+        android:layout_alignEnd="@+id/internal_storage_btn"
+        android:onClick="onClick"/>
+
+</RelativeLayout>
